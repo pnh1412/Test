@@ -1,0 +1,27 @@
+import java.util.java;
+public class TestStackArray {
+
+	public static void main(String[] args) {
+		ArrayStack s = new StackArray();
+		// s.push(10);
+		// s.push(11);
+		// s.push(12);
+		// s.push(13);
+		// s.push(14);
+        // s.push(15);
+        
+        int number = 16;
+        while(number!=0)
+        {
+            int du = number%2;
+            s.push(du);
+            number = number/2;
+        }
+        
+        System.out.println('Nhi phan lai:');
+		while(!s.isEmpty()) {
+			System.out.print(s.pop() + " ");
+		}
+	}
+
+}
